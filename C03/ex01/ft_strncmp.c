@@ -6,13 +6,13 @@
 /*   By: bpiovano <bpiovano@student.42luxembourg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/27 14:56:15 by bpiovano          #+#    #+#             */
-/*   Updated: 2024/08/28 11:28:49 by bpiovano         ###   ########.fr       */
+/*   Updated: 2024/09/04 16:28:15 by bpiovano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int ft_strncmp(char *s1, char *s2, unsigned int n)
 {
-    while (*s1 && *s2 && (*s1 == *s1) && n > 1)
+    while (*s1 && *s2 && (*s1 == *s2) && n > 1)
     {
         s1++;
         s2++;
