@@ -6,7 +6,7 @@
 /*   By: bpiovano <	bpiovano@student.42luxembour    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 12:39:51 by bpiovano          #+#    #+#             */
-/*   Updated: 2024/09/10 17:02:57 by bpiovano         ###   ########.fr       */
+/*   Updated: 2024/09/10 18:38:03 by bpiovano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,12 @@ void	ft_putchar(char c)
 
 void	ft_putstr(char *str)
 {
-	while (*str)
+	int	i;
+
+	i = 0;
+	while (*(str + i) != '\0')
 	{
-		ft_putchar(*str);
-		str++;
+		ft_putchar(*(str + i));
+		i++;
 	}
 }
