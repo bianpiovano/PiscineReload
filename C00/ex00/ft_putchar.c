@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bpiovano <bpiovano@student.42luxembourg    +#+  +:+       +#+        */
+/*   By: bpiovano <	bpiovano@student.42luxembour    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/18 13:12:49 by bpiovano          #+#    #+#             */
-/*   Updated: 2024/08/20 19:39:44 by bpiovano         ###   ########.fr       */
+/*   Updated: 2024/09/10 17:05:17 by bpiovano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void ft_putchar(char c)
+void	ft_putchar(char c)
 {
-    write(1, &c, 1);
+	write(1, &c, 1);
 }

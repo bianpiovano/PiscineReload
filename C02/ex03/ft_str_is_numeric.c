@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_str_is_numeric.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bpiovano <bpiovano@student.42luxembourg    +#+  +:+       +#+        */
+/*   By: bpiovano <	bpiovano@student.42luxembour    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/21 17:22:16 by bpiovano          #+#    #+#             */
-/*   Updated: 2024/08/21 21:47:48 by bpiovano         ###   ########.fr       */
+/*   Updated: 2024/09/10 16:37:32 by bpiovano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

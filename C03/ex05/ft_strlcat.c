@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bpiovano <bpiovano@student.42luxembourg    +#+  +:+       +#+        */
+/*   By: bpiovano <	bpiovano@student.42luxembour    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/03 18:35:34 by bpiovano          #+#    #+#             */
-/*   Updated: 2024/09/06 13:51:58 by bpiovano         ###   ########.fr       */
+/*   Updated: 2024/09/10 18:08:00 by bpiovano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,17 +22,11 @@ unsigned int	ft_strlcat(char *dest, const char *src, unsigned int size)
 	src_length = 0;
 	i = 0;
 	while (dest[dest_length])
-	{
 		dest_length++;
-	}
 	while (src[src_length])
-	{
 		src_length++;
-	}
 	if (size <= dest_length)
-	{
 		return (size + src_length);
-	}
 	while (src[i] && (dest_length + i) < size)
 	{
 		dest[dest_length + i] = src[i];

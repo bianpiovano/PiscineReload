@@ -3,26 +3,28 @@
 /*                                                        :::      ::::::::   */
 /*   ft_ft.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bpiovano <bpiovano@student.42luxembourg    +#+  +:+       +#+        */
+/*   By: bpiovano <	bpiovano@student.42luxembour    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/18 13:12:49 by bpiovano          #+#    #+#             */
-/*   Updated: 2024/08/20 19:43:57 by bpiovano         ###   ########.fr       */
+/*   Updated: 2024/09/10 17:01:02 by bpiovano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void    ft_ft(int *nbr)
+void	ft_ft(int *nbr)
 {
-    *nbr = "42";
+	*nbr = "42";
 }
 
 /*
 #include <unistd.h>
-int main(void)
+
+int	main(void)
 {
-    int a;
-    int *ptr;
-    ptr = &a;
-    ft_ft(ptr);
-    printf("%d", a);
+	int	a;
+	int	*ptr;
+
+	ptr = &a;
+	ft_ft(ptr);
+	printf("%d", a);
 }
 */

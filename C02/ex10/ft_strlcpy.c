@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bpiovano <bpiovano@student.42luxembourg    +#+  +:+       +#+        */
+/*   By: bpiovano <	bpiovano@student.42luxembour    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/23 19:07:49 by bpiovano          #+#    #+#             */
-/*   Updated: 2024/08/27 13:12:18 by bpiovano         ###   ########.fr       */
+/*   Updated: 2024/09/10 16:37:56 by bpiovano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@ unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 
 	a = 0;
 	b = 0;
-
 	while (src[a])
 	{
 		a++;
@@ -37,7 +36,7 @@ unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 /*
 #include <stdio.h>
 
-int main(void) {
+int	main(void) {
 	char *src;
 	char dest[0];
 
