@@ -6,7 +6,7 @@
 /*   By: bpiovano <	bpiovano@student.42luxembour    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 12:39:51 by bpiovano          #+#    #+#             */
-/*   Updated: 2024/09/10 18:38:03 by bpiovano         ###   ########.fr       */
+/*   Updated: 2024/09/10 19:20:12 by bpiovano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,3 +28,14 @@ void	ft_putstr(char *str)
 		i++;
 	}
 }
+
+/*
+#include <stdio.h>
+
+int	main(void)
+{
+	char str[] = "hello kitty"; 
+	ft_putstr(str);
+	return (0);
+}
+*/
