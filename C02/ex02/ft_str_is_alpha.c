@@ -6,19 +6,17 @@
 /*   By: bpiovano <	bpiovano@student.42luxembour    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/20 19:37:10 by bpiovano          #+#    #+#             */
-/*   Updated: 2024/09/10 17:13:10 by bpiovano         ###   ########.fr       */
+/*   Updated: 2024/09/10 18:34:23 by bpiovano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <unistd.h>
 
 int	ft_str_is_alpha(char *str)
 {
 	char	c;
 
-	c = *str;
-	while (c)
+	while (*str)
 	{
+		c = *str;
 		if ((!(c >= 'A' && c <= 'Z') && !(c >= 'a' && c <= 'z')))
 		{
 			return (0);
