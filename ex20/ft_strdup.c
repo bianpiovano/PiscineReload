@@ -19,12 +19,13 @@ char	*ft_strdup(char *src)
 	int		length;
 	char	*duplicate;
 
+	i = 0;
 	length = 0;
 	while (src[length] != '\0')
 	{
 		length++;
 	}
-	duplicate = (char *)malloc((length + 1) * sizeof(char));
+	duplicate = (char *)malloc((length + 1));
 	if (duplicate == NULL)
 	{
 		return (NULL);

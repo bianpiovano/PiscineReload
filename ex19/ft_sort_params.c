@@ -30,9 +30,9 @@ void	swap(char **a, char **b)
 {
 	char	c;
 
-	c = *a;
-	*a = *b;
-	*b = c;
+	c = **a;
+	**a = **b;
+	**b = c;
 }
 
 void	sort_args(int argc, char *argv[])

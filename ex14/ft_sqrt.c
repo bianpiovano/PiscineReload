@@ -6,7 +6,7 @@
 /*   By: bpiovano <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 15:06:15 by bpiovano          #+#    #+#             */
-/*   Updated: 2024/10/14 15:12:26 by bpiovano         ###   ########.fr       */
+/*   Updated: 2024/10/15 19:39:57 by bpiovano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,21 @@ int	ft_sqrt(int nb)
 {
 	int	i;
 
-	i = 1;
-	while (i * i <= 46340)
+	if (nb < 0)
 	{
-		if (i * i == nb)
-		{
-			return (i);
-		}
-		else
-		{
-			i++;
-		}
+		return (0);
 	}
-	return (0);
+	i = 0;
+	while (i * i < nb)
+	{
+		i++;
+	}
+	if (i * i == nb)
+	{
+		return (i);
+	}
+	else
+	{
+		return (0);
+	}
 }
