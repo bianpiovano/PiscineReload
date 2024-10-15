@@ -26,3 +26,5 @@ int	ft_sqrt(int nb)
 			i++;
 		}
 	}
+	return (0);
+}

@@ -6,11 +6,12 @@
 /*   By: bpiovano <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 15:15:49 by bpiovano          #+#    #+#             */
-/*   Updated: 2024/10/14 15:23:48 by bpiovano         ###   ########.fr       */
+/*   Updated: 2024/10/15 11:18:04 by bpiovano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_putchar(char c);
+
 void	ft_putstr(char *str)
 {
 	int	i;

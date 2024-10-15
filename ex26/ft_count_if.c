@@ -1,29 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
+/*   ft_count_if.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bpiovano <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/14 13:39:58 by bpiovano          #+#    #+#             */
-/*   Updated: 2024/10/15 13:26:23 by bpiovano         ###   ########.fr       */
+/*   Created: 2024/10/15 10:12:42 by bpiovano          #+#    #+#             */
+/*   Updated: 2024/10/15 10:57:35 by bpiovano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	print_number(char nb)
+int	ft_count_if(char **tab, int (*f)(char*))
 {
-	if (nb > '9')
+	int	count;
+	int	i;
+
+	count = 0;
+	i = 0;
+	while (tab[i] != 0)
 	{
-		return ;
+		if (f(tab[i]) == 1)
+		{
+			count++;
+		}
+		i++;
 	}
-	putchar(nb);
-	print_number(nb +1);
-}
-
-void	ft_print_numbers(void)
-{
-	print_number('0');
-	putchar('\n');
+	return (count);
 }

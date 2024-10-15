@@ -1,29 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
+/*   ft_abs.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bpiovano <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/14 13:39:58 by bpiovano          #+#    #+#             */
-/*   Updated: 2024/10/15 13:26:23 by bpiovano         ###   ########.fr       */
+/*   Created: 2024/10/15 11:20:25 by bpiovano          #+#    #+#             */
+/*   Updated: 2024/10/15 13:06:40 by bpiovano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#ifndef FT_ABS_H
+# define FT_ABS_H
 
-void	print_number(char nb)
+int	abs_int(int value)
 {
-	if (nb > '9')
+	if (value < 0)
 	{
-		return ;
+		return (-value);
 	}
-	putchar(nb);
-	print_number(nb +1);
+	else
+	{
+		return (value);
+	}
 }
 
-void	ft_print_numbers(void)
-{
-	print_number('0');
-	putchar('\n');
-}
+#endif

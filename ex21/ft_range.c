@@ -10,6 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
+
 int	*ft_range(int min, int max)
 {
 	int	size;
@@ -17,7 +19,7 @@ int	*ft_range(int min, int max)
 	int	i;
 
 	size = max - min;
-	*range = (int *)malloc(size * sizeof(int));
+	range = (int *)malloc(size * sizeof(int));
 	i = 0;
 	if (min >= max)
 	{

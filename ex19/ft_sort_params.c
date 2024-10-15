@@ -28,9 +28,9 @@ void	ft_putstr(char *str)
 
 void	swap(char **a, char **b)
 {
-	char	*c;
+	char	c;
 
-	*c = *a;
+	c = *a;
 	*a = *b;
 	*b = c;
 }

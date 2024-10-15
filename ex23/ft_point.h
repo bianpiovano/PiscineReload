@@ -1,29 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
+/*   ft_point.h                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bpiovano <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/14 13:39:58 by bpiovano          #+#    #+#             */
-/*   Updated: 2024/10/15 13:26:23 by bpiovano         ###   ########.fr       */
+/*   Created: 2024/10/15 11:32:00 by bpiovano          #+#    #+#             */
+/*   Updated: 2024/10/15 11:39:12 by bpiovano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#ifndef FT_POINT_H
+# define FT_POINT_H
 
-void	print_number(char nb)
+typedef struct s_point
 {
-	if (nb > '9')
-	{
-		return ;
-	}
-	putchar(nb);
-	print_number(nb +1);
-}
+	int	x;
+	int	y;
+}	t_point;
 
-void	ft_print_numbers(void)
-{
-	print_number('0');
-	putchar('\n');
-}
+void	set_point(t_point *point);
+
+#endif
