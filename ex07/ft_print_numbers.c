@@ -27,5 +27,4 @@ void	print_number(char nb)
 void	ft_print_numbers(void)
 {
 	print_number('0');
-	ft_putchar('\n');
 }

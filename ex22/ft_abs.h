@@ -6,23 +6,8 @@
 /*   By: bpiovano <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 11:20:25 by bpiovano          #+#    #+#             */
-/*   Updated: 2024/10/15 13:06:40 by bpiovano         ###   ########.fr       */
+/*   Updated: 2024/10/16 20:13:43 by bpiovano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_ABS_H
-# define FT_ABS_H
-
-int	abs_int(int value)
-{
-	if (value < 0)
-	{
-		return (-value);
-	}
-	else
-	{
-		return (value);
-	}
-}
-
-#endif
+#define ABS(Value) ((Value) < 0 ? -(Value) : (Value))
